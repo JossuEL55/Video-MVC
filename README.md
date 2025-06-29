@@ -26,15 +26,11 @@ Este proyecto es una pequeña aplicación en **Laravel 12** que calcula las comi
    cd tu-repo-comisiones
 Copiar y configurar .env
 
-bash
-Copiar
-Editar
-cp .env.example .env
-Ajusta las variables DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD.
+Ajusta las variables de entorno de tu base de datos DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD.
 
 Instalar dependencias PHP
 
-Uso
+## Uso
 Ingresar fecha de inicio y fecha de fin.
 
 Hacer clic en Filtrar y Calcular.
@@ -43,13 +39,12 @@ Ver las comisiones totales por vendedor dentro del rango.
 
 Consultar el listado de vendedores y las reglas de comisión vigentes.
 
-Enlaces
-
+## Enlaces
 Video explicativo: https://youtu.be/ICz5vPndHkQ
 
 Documentación de Laravel: https://laravel.com/docs
 
-Contacto
+## Contactos
 Correo institucional: jossue.ayala@udla.edu.ec
 
 Correo personal: jossue_ayala@hotmail.com
