@@ -4,14 +4,14 @@ Una aplicación MVC en Laravel (v12) con PostgreSQL que filtra ventas por rango 
 
 ---
 
-## 📹 Video Explicativo  
+## Video Explicativo  
 **Minicore Laravel – Filtrado y Cálculo de Comisiones**  
 https://loom.com/share/XXXXXXXXXXXX  
 *(Explica migraciones, seeders, controlador, vistas Blade/Tailwind y lógica de comisiones.)*
 
 ---
 
-## ⚙️ Instalación Local
+## Instalación Local
 
 1. Clona el repositorio  
    ```bash
