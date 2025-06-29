@@ -10,10 +10,10 @@ class VendedoresTableSeeder extends Seeder
     public function run()
     {
         Vendedor::insert([
-            ['nombre' => 'Jossue Ayala',   'email' => 'jossue.ayala@example.com'],
-            ['nombre' => 'Melanie Jacome', 'email' => 'melanie.jacome@example.com'],
-            ['nombre' => 'Carlos Pérez',   'email' => 'carlos.perez@example.com'],
-            ['nombre' => 'María Ortiz',    'email' => 'maria.ortiz@example.com'],
+            ['nombre' => 'Jossue Ayala',   'email' => 'jossue.ayala@udla.edu.ec'],
+            ['nombre' => 'Melanie Jacome', 'email' => 'melanie.jacome@udla.edu.ec'],
+            ['nombre' => 'Carlos Pérez',   'email' => 'carlos.perez@udla.edu.ec'],
+            ['nombre' => 'María Ortiz',    'email' => 'maria.ortiz@udla.edu.ec'],
         ]);
     }
 }
