@@ -1,5 +1,4 @@
-# Comisiones Vendedores de la UDLA
-
+# Comisiones Vendedores 
 Este proyecto es una pequeña aplicación en **Laravel 12** que calcula las comisiones de ventas de los vendedores en base a rangos de fecha y reglas predefinidas. Incluye:
 
 - **Migraciones** para crear las tablas `vendedores`, `ventas` y `reglas`.
@@ -34,37 +33,6 @@ cp .env.example .env
 Ajusta las variables DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD.
 
 Instalar dependencias PHP
-
-bash
-Copiar
-Editar
-composer install
-Instalar dependencias de frontend (opcional)
-
-bash
-Copiar
-Editar
-npm install
-npm run build
-Generar clave de aplicación
-
-bash
-Copiar
-Editar
-php artisan key:generate
-Migrar y seedear base de datos
-
-bash
-Copiar
-Editar
-php artisan migrate --seed
-Levantar servidor local
-
-bash
-Copiar
-Editar
-php artisan serve
-Accede a http://127.0.0.1:8000/comisiones
 
 Uso
 Ingresar fecha de inicio y fecha de fin.
