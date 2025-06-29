@@ -1,93 +1,87 @@
-# Minicore Laravel – Cálculo de Comisiones
+# Comisiones Vendedores de la UDLA
 
-Una aplicación MVC en Laravel (v12) con PostgreSQL que filtra ventas por rango de fechas y calcula la comisión acumulada de cada vendedor según reglas.
+Este proyecto es una pequeña aplicación en **Laravel 12** que calcula las comisiones de ventas de los vendedores en base a rangos de fecha y reglas predefinidas. Incluye:
 
----
+- **Migraciones** para crear las tablas `vendedores`, `ventas` y `reglas`.
+- **Seeders** con datos de ejemplo (vendedores, ventas y reglas).
+- **Controlador** para filtrar ventas por fecha, calcular comisiones según la regla aplicable, y pasar resultados a la vista.
+- **Vista** única con diseño responsivo usando Tailwind CSS, que muestra:
+  - Formulario de filtro por rango de fechas.
+  - Tabla de vendedores.
+  - Tabla de reglas de comisión.
+  - Resultado de comisiones por vendedor en el rango seleccionado.
+- **Layout** base que incluye logo de la UDLA y pie de página con crédito a la Universidad de las Américas.
 
-## Video Explicativo  
-**Minicore Laravel – Filtrado y Cálculo de Comisiones**  
-https://loom.com/share/XXXXXXXXXXXX  
-*(Explica migraciones, seeders, controlador, vistas Blade/Tailwind y lógica de comisiones.)*
+## Requerimientos
 
----
+- PHP 8.1 o superior  
+- Composer  
+- PostgreSQL+
+- Extensiones PHP: `pdo`, `pdo_pgsql`, `mbstring`  
 
-## Instalación Local
+## Instalación
 
-1. Clona el repositorio  
+1. Clonar el repositorio  
    ```bash
-   git clone https://github.com/tu-usuario/minicore-laravel.git
-   cd minicore-laravel
-Instala dependencias
-
-bash
-Copiar
-Editar
-composer install
-Configura entorno
+   git clone https://github.com/TU_USUARIO/tu-repo-comisiones.git
+   cd tu-repo-comisiones
+Copiar y configurar .env
 
 bash
 Copiar
 Editar
 cp .env.example .env
-php artisan key:generate
-Ajusta .env para PostgreSQL:
+Ajusta las variables DB_CONNECTION, DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD.
 
-ini
+Instalar dependencias PHP
+
+bash
 Copiar
 Editar
-DB_CONNECTION=pgsql
-DB_HOST=...
-DB_PORT=5432
-DB_DATABASE=...
-DB_USERNAME=...
-DB_PASSWORD=...
-Migra y seed
+composer install
+Instalar dependencias de frontend (opcional)
+
+bash
+Copiar
+Editar
+npm install
+npm run build
+Generar clave de aplicación
+
+bash
+Copiar
+Editar
+php artisan key:generate
+Migrar y seedear base de datos
 
 bash
 Copiar
 Editar
 php artisan migrate --seed
-Levanta el servidor
+Levantar servidor local
 
 bash
 Copiar
 Editar
 php artisan serve
-Abre en el navegador
+Accede a http://127.0.0.1:8000/comisiones
 
-arduino
-Copiar
-Editar
-http://127.0.0.1:8000/comisiones
-🚀 Deploy en Render
-Conecta tu repo en Render → New Web Service.
+Uso
+Ingresar fecha de inicio y fecha de fin.
 
-Build Command
+Hacer clic en Filtrar y Calcular.
 
-css
-Copiar
-Editar
-composer install && php artisan migrate --seed
-Start Command
+Ver las comisiones totales por vendedor dentro del rango.
 
-nginx
-Copiar
-Editar
-php artisan serve --host=0.0.0.0 --port=$PORT
-Define variables de entorno en el panel de Render según tu PostgreSQL.
+Consultar el listado de vendedores y las reglas de comisión vigentes.
 
-Render migrará y servirá tu app automáticamente.
+Enlaces
 
-📝 Uso
-Ingresa Fecha Inicio y Fecha Fin.
+Video explicativo: https://youtu.be/ICz5vPndHkQ
 
-Haz clic en Filtrar y Calcular.
+Documentación de Laravel: https://laravel.com/docs
 
-Verás:
+Contacto
+Correo institucional: jossue.ayala@udla.edu.ec
 
-Comisión total por vendedor.
-
-Listado de vendedores (nombre + email).
-
-Tabla de reglas (umbral monto + porcentaje).
-
+Correo personal: jossue_ayala@hotmail.com
